@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="DELL"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-09-27 09:04:39 PM"/>
+        <attribute name="created" value="REVMTDtERVNLVE9QLVNWMjAxUVA7MjAyMi0wOS0yNzswODo1NzowMyBQTTsyNjQw"/>
+        <attribute name="edited" value="REVMTDtERVNLVE9QLVNWMjAxUVA7MjAyMi0wOS0yNzswOTowNDozOSBQTTsxOzI3NTA="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="a, b, x" type="Real" array="False" size=""/>
+            <output expression="&quot; Nhap a: &quot;" newline="True"/>
+            <input variable="a"/>
+            <output expression="&quot; Nhap b: &quot;" newline="True"/>
+            <input variable="b"/>
+            <if expression="a==0">
+                <then>
+                    <if expression="b==0">
+                        <then>
+                            <output expression="&quot; Phuong trinh co vo so nghiem &quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot; Phuong trinh vo nghiem &quot;" newline="True"/>
+                        </else>
+                    </if>
+                </then>
+                <else>
+                    <assign variable="x" expression="-b/a"/>
+                    <output expression="&quot; Phuong trinh co nghiem x = &quot; &amp; x" newline="True"/>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
